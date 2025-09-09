@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- the css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -64,10 +65,50 @@
                 </div>
             </div>
             <div id="card-container" class="grid grid-cols-3 gap-4 w-272">
-                
+
+            </div>
+            <div>
+                <div id="" class="w-75 h-fit bg-white p-5">
+                    <h1 class="text-xl font-semibold mb-2">Your Cart</h1>
+                    <div id="cart-container">
+                        <div  class="">
+                        
+                    </div>
+                    </div>
+                    <hr class="border-t-2 border-gray-200 my-4">
+                    <div id="total-price">
+                        
+                    </div>
+                    </div>
+                    
+                </div>
+
             </div>
         </div>
     </div>
+
+
+
+
+
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+    <dialog id="detailModal" class="modal">
+        <div id="modal-details" class="modal-box">
+
+            <div class="modal-action flex flex-col">
+                <div id="modal-box">
+
+                </div>
+                <form method="dialog" class="flex justify-end">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
     <script src="index.js"></script>
 </body>
 
