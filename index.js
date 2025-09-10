@@ -112,7 +112,7 @@ displayCart = (plants) => {
     const card = document.createElement("div");
     card.classList.add("cart-item");
     card.innerHTML = `
-    <div class="bg-[#f0fdf4] flex justify-between items-center px-3 my-3 rounded-md">
+    <div class="bg-[#f0fdf4] flex justify-between items-center px-3 my-3 rounded-md mx-auto">
     <div>
     <h1 class="text-[#1f2937] font-semibold">${plants.name}</h1>
     <h1 class="text-[#1f293780]"><span>${plants.price}</span></h1>
