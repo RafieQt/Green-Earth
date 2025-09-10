@@ -107,6 +107,7 @@ addCart = (id) => {
 let priceTotal = 0;
 displayCart = (plants) => {
     const container = document.getElementById("cart-container");
+    alert(`${plants.name} has been added to the cart.`);
 
 
     const card = document.createElement("div");
