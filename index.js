@@ -5,7 +5,7 @@ const DisplayCategory = (trees) => {
         const list = document.createElement("div");
 
         list.innerHTML = `
-        <button id="category-${tree.id}" onclick="selectCategory('${tree.category_name}'); active(${tree.id})" class="cat border-none my-1 btn flex justify-start items-center text-lg bg-[#f0fdf4] w-62  rounded-md h-9 hover:bg-[#15803d] hover:text-white">${tree.category_name}</button>
+        <button id="category-${tree.id}" onclick="selectCategory('${tree.category_name}'); active(${tree.id})" class="cat border-none my-1 btn flex justify-start items-center text-lg bg-[#f0fdf4] w-full md:w-62 rounded-md h-9 hover:bg-[#15803d] hover:text-white">${tree.category_name}</button>
         `;
 
         categoryContainer.append(list);
@@ -164,7 +164,7 @@ const displayPlants = (plants) => {
         filtered.forEach(plant => {
             const card = document.createElement("div");
             card.innerHTML = `
-        <div class="bg-white h-fit w-85 rounded-lg p-4 space-y-3">
+        <div class="bg-white h-fit w-full md:w-85 rounded-lg p-4 space-y-3">
                     <img class="rounded-lg h-46 w-full" src="${plant.image}" alt="">
                     <h3 onclick="cardDetails(${plant.id})" class="font-semibold">${plant.name}</h3>
                     <p class="line-clamp-2">${plant.description}</p>
